@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지금, 첫걸음을 내딛으라 - 학개 1:1-15; 2:1-9</title>
+    <!-- Tailwind CSS CDN (빌드 도구 없이 즉시 동작) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f3f4f6;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                padding-bottom: 0 !important;
+            }
+            .shadow-xl {
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800 pb-12">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl min-h-screen overflow-hidden sm:rounded-b-3xl">
+        
+        <!-- Header -->
+        <header class="bg-gradient-to-br from-blue-900 to-blue-600 text-white p-8 md:p-12 relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium backdrop-blur-sm">
+                            청소년·청년부 설교
+                        </span>
+                        <span class="text-blue-100 text-sm font-light">
+                            본문: 학개 1:1-15; 2:1-9
+                        </span>
+                    </div>
+
+                    <!-- 편의 기능 버튼 (인쇄/요약 복사) -->
+                    <div class="flex items-center gap-2 no-print">
+                        <button
+                            id="copyBtn"
+                            onclick="handleCopySummary()"
+                            class="flex items-center gap-1.5 px-3 py-1.5 bg-white/15 hover:bg-white/25 active:bg-white/30 rounded-lg text-xs font-medium text-white transition cursor-pointer"
+                            title="설교 요약 텍스트 복사"
+                        >
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span id="copyText">요약 복사</span>
+                        </button>
+                        <button
+                            onclick="window.print()"
+                            class="flex items-center gap-1.5 px-3 py-1.5 bg-white/15 hover:bg-white/25 active:bg-white/30 rounded-lg text-xs font-medium text-white transition cursor-pointer"
+                            title="인쇄하기"
+                        >
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+                            </svg>
+                            <span>인쇄</span>
+                        </button>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl font-black mb-2 tracking-tight">
+                    지금, 첫걸음을 내딛으라
+                </h1>
+                <p class="text-blue-100 text-lg font-light flex flex-wrap items-center gap-2">
+                    <span>“우리는 지금 무엇을 미루고 있습니까?”</span>
+                    <span class="opacity-80 text-sm font-normal">| “내가 너희와 함께 하노라 (학개 1:13)”</span>
+                </p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-6 md:p-10 space-y-12">
+            
+            <!-- 서론 도입 박스 -->
+            <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                <p class="text-lg leading-relaxed font-medium text-gray-800">
+                    “시험만 끝나면, 이 바쁜 일만 넘기면 그때는 진짜 말씀도 읽고 예배도 집중해야지...”<br>
+                    <span class="text-sm font-normal text-gray-600 mt-2 block">
+                        그런데 이상하게도 그 '나중'은 좀처럼 오지 않습니다. 바벨론 포로에서 귀환한 유다 백성들도 그랬습니다. 성전 기초만 놓고 16년 동안 “아직 여호와의 전을 건축할 시기가 이르지 않았다”며 차일피일 미뤘습니다. 하나님은 학개 선지자를 통해 멈춰 선 그들의 잠을 깨우십니다. “너희는 언제까지 미룰 것이냐? 너희의 행위를 정직하게 살펴보라!”
+                    </span>
+                </p>
+            </div>
+
+            <!-- 설교 3대지 -->
+            <section class="space-y-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+                        <span>1. 우리는 지금 무엇을 먼저 짓고 있습니까?</span>
+                        <span class="text-sm font-normal text-blue-700 bg-blue-100/70 px-2.5 py-0.5 rounded-full">학개 1:2-7</span>
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        백성들은 하나님을 버렸다고 하지 않았습니다. 단지 <strong>“아직 때가 아니다”</strong>라며 미뤘을 뿐입니다. 그러나 그 사이 자신의 집은 화려하고 안락한 <strong>“판벽한 집”</strong>으로 정성껏 꾸몄고, 하나님의 전은 황폐한 채 내버려 두었습니다. 먹어도 배부르지 않고, 마셔도 목마르며, <strong>“구멍 뚫어진 전대”</strong>에 돈을 넣듯 허탈했던 이유가 바로 여기에 있었습니다. 하나님은 정죄가 아니라 사랑의 마음으로 우리에게 질문하십니다. <strong>“너희의 행위를 살펴볼지니라.”</strong>
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-teal-700 mb-4 flex items-center gap-2">
+                        <span>2. 순종의 첫걸음보다 먼저 하나님의 함께하심이 있습니다</span>
+                        <span class="text-sm font-normal text-teal-800 bg-teal-100/70 px-2.5 py-0.5 rounded-full">학개 1:12-14</span>
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        백성들이 마음을 돌이켜 하나님의 음성에 귀를 기울이는 바로 그 자리에서, 하나님은 어떤 책망도 없이 가장 먼저 선포하십니다: <strong>“내가 너희와 함께 하노라(학 1:13).”</strong> 세상은 “네가 완벽한 결과를 증명하면 인정해 주겠다”고 하지만, 복음은 정반대입니다. 하나님은 성전이 완공되었을 때 찾아오시는 분이 아니라, <strong>우리가 돌이키고 다시 일어서려는 그 자리에 이미 함께하십니다.</strong> 하나님이 백성들과 지도자들의 영을 감동시키셨기에 비로소 순종의 첫걸음이 가능했습니다.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-amber-700 mb-4 flex items-center gap-2">
+                        <span>3. 지금은 작아 보여도 하나님은 더 큰 일을 이루십니다</span>
+                        <span class="text-sm font-normal text-amber-800 bg-amber-100/80 px-2.5 py-0.5 rounded-full">학개 2:1-9</span>
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        다시 짓기 시작한 성전이 과거 솔로몬 성전에 비해 너무나 초라해 보여 낙심할 때(“너희 눈에 보잘것없지 아니하냐”), 하나님은 세 번이나 선포하십니다: <strong>“스스로 굳세게 할지어다! 내가 너희와 함께 하노라.”</strong> 믿음의 용기는 나의 자신감이나 조건이 아니라 하나님의 임재에서 나옵니다. 비록 오늘 나의 기도가 5분에 불과하고 작은 성경 한 장 읽기에 그칠지라도, 하나님은 <strong>“이 성전의 나중 영광이 이전 영광보다 크리라”</strong> 약속하시며 참 성전이신 예수 그리스도를 통해 영원한 평강을 부어주십니다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 결론 -->
+            <section class="bg-gray-900 text-white rounded-2xl p-8 text-center shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-amber-500 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span>결론</span>
+                </h2>
+                <p class="text-xl font-bold leading-relaxed">
+                    “완벽한 때를 기다리며 멈춰 서 있지 마십시오.<br class="hidden sm:inline">
+                    ‘내가 이미 너와 함께한다’ 약속하시는 하나님의 손을 잡고, 오늘 지금 첫걸음을 내딛으십시오.”
+                </p>
+            </section>
+
+            <!-- 묵상하는 질문 2가지 추가 -->
+            <section class="bg-amber-50 p-6 md:p-8 rounded-2xl border border-amber-200">
+                <h3 class="text-2xl font-bold text-amber-900 mb-6 flex items-center gap-2">
+                    <span>💡 묵상하는 질문 2가지</span>
+                </h3>
+                <div class="space-y-4 text-gray-700">
+                    <div class="bg-white p-5 rounded-xl shadow-xs border border-amber-100">
+                        <strong class="text-amber-800 block mb-1 text-base font-bold">Q1.</strong>
+                        <p class="text-gray-800 leading-relaxed">
+                            나는 지금 학업·스펙·분주함 때문에 “나중에, 시험 끝나고”라며 하나님과의 교제와 영적인 우선순위를 미뤄두고 있지 않은가?
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow-xs border border-amber-100">
+                        <strong class="text-amber-800 block mb-1 text-base font-bold">Q2.</strong>
+                        <p class="text-gray-800 leading-relaxed">
+                            오늘 내 결단이 감정적 결심에서 멈추지 않고, 당장 실천할 수 있는 가장 작은 행동(5분 스마트폰 끄고 기도하기, 자기 전 학개 1장 읽기, 주일 예배 시간 최우선 고정하기)으로 어떻게 이어져야 하는가?
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 결단/적용 & 찬양 (2열 그리드) -->
+            <section class="grid md:grid-cols-2 gap-8">
+                <!-- 좌측: 결단 체크리스트 & 기도제목 -->
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-4 flex items-center justify-between">
+                            <span>✅ 결단과 적용</span>
+                            <span class="text-xs text-blue-600 font-normal">클릭하여 실천을 체크해 보세요</span>
+                        </h3>
+                        <ul class="space-y-3.5 text-gray-700">
+                            <li onclick="toggleAction(this)" class="action-item p-2.5 rounded-lg transition cursor-pointer flex items-start gap-2.5 hover:bg-white/60">
+                                <div class="checkbox-box mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-blue-300 bg-white text-blue-600 text-xs transition shrink-0 font-medium">
+                                    1
+                                </div>
+                                <span class="action-text">“나중에”라는 영적 핑계를 멈추고, 오늘 잠들기 전 스마트폰을 끄고 5분간 기도하기</span>
+                            </li>
+                            <li onclick="toggleAction(this)" class="action-item p-2.5 rounded-lg transition cursor-pointer flex items-start gap-2.5 hover:bg-white/60">
+                                <div class="checkbox-box mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-blue-300 bg-white text-blue-600 text-xs transition shrink-0 font-medium">
+                                    2
+                                </div>
+                                <span class="action-text">이번 주 스마트폰 캘린더와 다이어리에 주일 예배 일정을 가장 첫 번째 자리에 고정하기</span>
+                            </li>
+                            <li onclick="toggleAction(this)" class="action-item p-2.5 rounded-lg transition cursor-pointer flex items-start gap-2.5 hover:bg-white/60">
+                                <div class="checkbox-box mt-0.5 w-5 h-5 rounded-md flex items-center justify-center border border-blue-300 bg-white text-blue-600 text-xs transition shrink-0 font-medium">
+                                    3
+                                </div>
+                                <span class="action-text">성적과 스펙으로 채워지지 않는 갈증을 인정하고, 오늘 밤 학개 1장을 소리 내어 묵상하기</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-xl font-bold text-purple-700 mt-8 mb-4">❤️ 기도제목</h3>
+                        <ul class="space-y-2.5 text-gray-700 text-[15px]">
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-500 font-bold">•</span>
+                                <span>판벽한 내 집만 채우려던 마음을 내려놓고, 삶의 우선순위를 하나님께 온전히 올려드리기를</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-500 font-bold">•</span>
+                                <span>“내가 너와 함께 하노라” 약속하신 말씀을 의지하여 두려움 없이 첫걸음을 내딛기를</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-purple-500 font-bold">•</span>
+                                <span>작고 초라해 보이는 오늘 하루일지라도 하나님께서 이루실 더 큰 영광과 평강을 바라보기를</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 우측: 결단 찬양 (YouTube 임베드 & 링크) -->
+                <div class="bg-purple-50 p-6 rounded-2xl border border-purple-100">
+                    <h3 class="text-xl font-bold text-purple-700 mb-6">🎵 결단 찬양</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <p class="font-bold text-sm text-purple-950">1. 주님 말씀하시면 (말씀하시면)</p>
+                                <a
+                                    href="https://www.youtube.com/results?search_query=주님+말씀하시면"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-xs text-purple-600 hover:text-purple-800 flex items-center gap-1 font-medium"
+                                >
+                                    <span>YouTube 열기</span>
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <iframe
+                                class="w-full aspect-video rounded-lg shadow-xs border border-purple-100 bg-black/5"
+                                src="https://www.youtube.com/embed/fSUrZkaTOF0"
+                                title="주님 말씀하시면"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <p class="font-bold text-sm text-purple-950">2. 선한 능력으로 (Von guten Mächten)</p>
+                                <a
+                                    href="https://www.youtube.com/results?search_query=선한+능력으로+마커스"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-xs text-purple-600 hover:text-purple-800 flex items-center gap-1 font-medium"
+                                >
+                                    <span>YouTube 열기</span>
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <iframe
+                                class="w-full aspect-video rounded-lg shadow-xs border border-purple-100 bg-black/5"
+                                src="https://www.youtube.com/embed/qDyCoSMia48"
+                                title="선한 능력으로"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="p-6 text-center text-sm text-gray-500 border-t border-gray-100">
+            <p>본 인포그래픽은 학개 1:1-15; 2:1-9 설교 내용을 바탕으로 제작되었습니다.</p>
+        </footer>
+    </div>
+
+    <!-- 순수 바닐라 자바스크립트 (인터넷만 연결되면 브라우저에서 바로 동작) -->
+    <script>
+        // 결단 체크리스트 토글 기능
+        function toggleAction(element) {
+            const checkbox = element.querySelector('.checkbox-box');
+            const text = element.querySelector('.action-text');
+            const isChecked = element.classList.contains('checked');
+
+            if (!isChecked) {
+                element.classList.add('checked', 'bg-blue-100/80', 'text-blue-950', 'font-medium');
+                checkbox.classList.remove('border-blue-300', 'bg-white', 'text-blue-600');
+                checkbox.classList.add('bg-blue-600', 'text-white', 'border-blue-600');
+                checkbox.innerHTML = '<svg class="w-3.5 h-3.5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>';
+                text.classList.add('line-through', 'opacity-75');
+            } else {
+                element.classList.remove('checked', 'bg-blue-100/80', 'text-blue-950', 'font-medium');
+                checkbox.classList.add('border-blue-300', 'bg-white', 'text-blue-600');
+                checkbox.classList.remove('bg-blue-600', 'text-white', 'border-blue-600');
+                const idx = Array.from(element.parentNode.children).indexOf(element) + 1;
+                checkbox.textContent = idx;
+                text.classList.remove('line-through', 'opacity-75');
+            }
+        }
+
+        // 설교 요약 클립보드 복사 기능
+        function handleCopySummary() {
+            const summary = `[설교 요약 인포그래픽]
+제목: 지금, 첫걸음을 내딛으라
+본문: 학개 1:1-15; 2:1-9 (청소년·청년부 설교)
+요절: “내가 너희와 함께 하노라 (학 1:13)”
+
+1. 우리는 지금 무엇을 먼저 짓고 있습니까? (학개 1:2-7)
+- "아직 때가 아니다"며 16년간 성전 재건을 미뤘던 백성들.
+- 판벽한 내 집의 안락에 갇혀 하나님의 집은 황폐해졌습니다. 구멍 뚫어진 전대처럼 헛헛한 삶을 돌이켜 "너희의 행위를 살펴보라"는 부르심에 귀 기울이십시오.
+
+2. 순종의 첫걸음보다 먼저 하나님의 함께하심이 있습니다 (학개 1:12-14)
+- 백성들이 돌이키는 바로 그 순간 선포된 약속: "내가 너희와 함께 하노라."
+- 하나님은 완벽한 성전이 지어진 뒤에 오시는 분이 아니라, 우리가 돌이키는 그 자리에 이미 함께하시며 우리 영을 감동시키십니다.
+
+3. 지금은 작아 보여도 하나님은 더 큰 일을 이루십니다 (학개 2:1-9)
+- 솔로몬 성전에 비해 초라해 보여 낙심할 때 주신 명령: "스스로 굳세게 할지어다! 내가 너희와 함께 하노라."
+- 자신감이 아닌 하나님의 임재에서 나오는 용기. "이 성전의 나중 영광이 이전 영광보다 크리라!" 참 성전이신 예수 그리스도의 평강이 임합니다.
+
+[결론]
+완벽한 때를 기다리며 멈춰 서 있지 마십시오. ‘내가 이미 너와 함께한다’ 약속하시는 손을 잡고, 오늘 지금 첫걸음을 내딛으십시오.
+
+[묵상 질문]
+Q1. 나는 지금 학업·스펙·분주함 때문에 "나중에"라며 하나님과의 교제와 우선순위를 미뤄두고 있지 않은가?
+Q2. 오늘 당장 실천할 수 있는 나의 가장 작은 순종의 첫걸음(5분 기도, 학개 1장 읽기, 주일예배 1순위 고정)은 무엇인가?`;
+
+            navigator.clipboard.writeText(summary).then(() => {
+                const copyText = document.getElementById('copyText');
+                const originalText = copyText.textContent;
+                copyText.textContent = '복사 완료!';
+                setTimeout(() => {
+                    copyText.textContent = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('클립보드 복사 실패:', err);
+            });
+        }
+    </script>
+</body>
+</html>
